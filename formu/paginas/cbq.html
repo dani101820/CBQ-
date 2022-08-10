@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Preguntas</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/CSS/Questions.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.0.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="~/Scripts/validate-questions.js"></script>
+</head>
+<body>
+    <div class="title">Cuestionario CBQ</div>
+    <div class="subtitle">infomacion sobre como llenar el cuestionario</div>
+    <img class="image" src="~/Resources/4.jpg" />    
+    <div class="syle-left">
+        <div class="text">
+            1.Mantener peleas y discusiones “online”, empleando insultos,
+            etc. por medio de mensajes electrónicos.
+        </div>
+        <select id="question1" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <div class="text">
+            2.Enviar mensajes amenazantes o insultantes por e-mail.
+        </div>
+        <select id="question2" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <div class="text">
+            3.Enviar mensajes amenazantes o insultantes por teléfono
+            móvil
+        </div>
+        <select id="question3" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <div class="text">
+            4.Colgar imágenes en internet de un conocido/a o compañero/a
+            que pueden ser humillantes (por ejemplo, de cuando se está
+            vistiendo en el vestuario del gimnasio).
+        </div>
+        <select id="question4" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+        <textarea class="mt-4 col-5" placeholder="En caso afirmativo describe que tipo de imágenes" id="openQuestion4"></textarea>
+
+        <div class="text">
+            5.Enviar enlaces de imágenes humillantes a otras personas para
+            que las puedan ver.
+        </div>
+        <select id="question5" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+        <textarea class="mt-4 col-5" placeholder="En caso afirmativo describe: " id="openQuestion5"></textarea>
+
+        <div class="text">
+            6.Escribir bromas, rumores, chismes o comentarios que ponían
+            en ridículo a un compañero/a en internet
+        </div>
+        <select id="question6" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+    </div>
+    <img class="imageR" src="~/Resources/6.jpg" />
+    <div class="syle-right">
+        <div class="text">
+            7.Enviar enlaces donde aparecían rumores, chismes etc. de un
+            compañero/a o conocido/a a otras personas para que las
+            leyeran.
+        </div>
+        <select id="question7" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <div class="text">
+            8.Conseguir la contraseña (nicks, claves, etc.) de otra persona y
+            enviar mensajes con su nombre por e-mail que le podían hacer quedar mal ante los demás o crearle problemas con sus
+            conocidos.
+        </div>
+        <select id="question8" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+
+        <div class="text">
+            9.Grabar video o tomar fotografías con el móvil mientras un
+            grupo se ríe y obliga a otra persona a hacer algo humillante o
+            ridículo.
+        </div>
+        <select id="question9" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+        <textarea class="mt-4 col-5" placeholder="En caso afirmativo describe: " id="openQuestion9"></textarea>
+
+        <div class="text">
+            10.Enviar esas imágenes a otras personas.
+        </div>
+        <select id="question10" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+
+        <div class="text">
+            11.Grabar video o tomar fotografías con el móvil mientras
+            alguien golpea o hace daño a otra persona.
+        </div>
+        <select id="question11" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+        <textarea class="mt-4 col-5" placeholder="En caso afirmativo describe: " id="openQuestion11"></textarea>
+
+        <div class="text">
+            12.Enviar estas imágenes grabadas a otras personas
+        </div>
+        <select id="question12" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+        <textarea class="mt-4 col-5" placeholder="En caso afirmativo describe: " id="openQuestion12"></textarea>
+
+    </div>
+    <img class="image" src="~/Resources/5.jpg" />
+    <div class="syle-left">
+        <div class="text">
+            13.Difundir online secretos, información comprometida o
+            imágenes de alguien.
+        </div>
+        <select id="question13" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <div class="text">
+            14.Apartar a alguien de modo intencional de un grupo online
+            (chats, listas de amigos, foros temáticos, etc.).
+        </div>
+        <select id="question14" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <div class="text">
+            15.Enviar insistentemente (de forma repetida) mensajes que
+            incluyen amenazas o que son muy intimidatorios.
+        </div>
+        <select id="question15" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <div class="text">
+            16.Grabar video o tomar fotografías a algún compañero/a con
+            móvil en algún tipo de comportamiento de índole sexual.
+        </div>
+        <select id="question16" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <div class="text">
+            17.Enviar esas imágenes a otras personas.
+        </div>
+        <select id="question17" class="custom-select selectC">
+            <option selected value="0">Seleccione una respuesta</option>
+            <option value="1">Nunca</option>
+            <option value="2">Alguna vez</option>
+            <option value="3">A menudo</option>
+        </select>
+
+        <a href="end.html"><input id="send" type="submit" value="Enviar" class="btn btn-info mt-4" /></a>
+        
+        
+        
+    </div>
+</body>
+</html>
